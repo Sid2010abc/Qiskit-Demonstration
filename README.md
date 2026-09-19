@@ -20,4 +20,4 @@ Tech:
 - `qiskit`
 - `qiskit-aer`
 
-Usage: install dependencies with `pip install qiskit qiskit-aer`, then run `python demo.py` (or whatever the script is named) and follow the menu prompts to step through each experiment.
+Usage: install dependencies with `pip install qiskit qiskit-aer`, then run the file and follow the menu prompts to step through each experiment.
