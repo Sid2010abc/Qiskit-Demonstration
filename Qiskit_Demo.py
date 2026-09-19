@@ -3,9 +3,6 @@ import random
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import Aer
 
-# -------------------------------
-# Helpers
-# -------------------------------
 def slow_print(message):
     for char in message:
         print(char, end='', flush=True)
@@ -23,9 +20,6 @@ def reveal_letters(message):
         print(char, end="", flush=True)
     print("\n")
 
-# -------------------------------
-# David’s Description
-# -------------------------------
 def intro():
     slow_print("\n🌌 You are opening the notebook of an extraordinary thinker...\n")
     time.sleep(1)
@@ -39,9 +33,6 @@ def intro():
     time.sleep(1)
     input("Press ENTER to see his first experiment...\n")
 
-# -------------------------------
-# Diagram Explanation
-# -------------------------------
 def explain_diagram():
     slow_print("\n📖 HOW TO READ THE CIRCUITS:\n")
     slow_print("""
@@ -54,9 +45,6 @@ c_0: ════════════
     slow_print("- c_0 → classical bit to store the result\n")
     input("Press ENTER to continue...\n")
 
-# -------------------------------
-# Experiments
-# -------------------------------
 def experiment_h(letter):
     slow_print("\n📝 Dave’s Experiment: H gate (Superposition)\n")
     qc = QuantumCircuit(1, 1)
@@ -97,9 +85,6 @@ def experiment_multi(letters):
     print("Secret letters revealed: ", end="")
     reveal_letters(letters)
 
-# -------------------------------
-# Main
-# -------------------------------
 def main():
     intro()
     explain_diagram()
